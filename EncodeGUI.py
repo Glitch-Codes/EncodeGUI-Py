@@ -1,6 +1,6 @@
 import sys
 
-from PyQt6.QtCore import Qt
+from PyQt6.QtCore import Qt, QSize
 from PyQt6.QtGui import QAction
 from PyQt6.QtWidgets import QApplication, QLabel, QMainWindow, QMenu, QPushButton
 
@@ -10,6 +10,7 @@ class MainWindow(QMainWindow):
         super().__init__()
         
         self.setWindowTitle("EncodeGUI-Py")
+        self.setFixedSize(QSize(743, 387))
 
         button = QPushButton("Press Me!")
         button.setCheckable(True)
