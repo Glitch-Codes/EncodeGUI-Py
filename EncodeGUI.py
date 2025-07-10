@@ -2,7 +2,8 @@ import sys
 
 from PyQt6.QtCore import Qt, QSize
 from PyQt6.QtGui import QAction
-from PyQt6.QtWidgets import QApplication, QLabel, QMainWindow, QMenu, QPushButton
+from PyQt6.QtWidgets import QApplication, QLabel, QMainWindow, QMenu, QPushButton, QTabWidget
+from layout_colourwidget import Color
 
 
 class MainWindow(QMainWindow):
@@ -12,12 +13,14 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("EncodeGUI-Py")
         self.setFixedSize(QSize(743, 387))
 
-        button = QPushButton("Press Me!")
-        button.setCheckable(True)
-        button.clicked.connect(self.the_button_was_clicked)
+        tabs = QTabWidget()
+        tabs.setTabPosition(QTabWidget.TabPosition.West)
+        tabs.setMovable(True)
 
-        # Set the central widget of the Window.
-        self.setCentralWidget(button)
+        for color in ["red", "green", "blue", "yellow"]:
+            tabs.addTab(Color(color), color)
+
+        self.setCentralWidget(tabs)
 
     def contextMenuEvent(self, e):
         context = QMenu(self)
@@ -25,9 +28,6 @@ class MainWindow(QMainWindow):
         context.addAction(QAction("test 2", self))
         context.addAction(QAction("test 3", self))
         context.exec(e.globalPos())
-
-    def the_button_was_clicked(self):
-        print("Clicked!")
 
 app = QApplication(sys.argv)
 
