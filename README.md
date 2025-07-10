@@ -1,4 +1,4 @@
-# EncodeGUI
+# EncodeGUI-Py
 <p align="center">
   <img src="https://github.com/DaGooseYT/EncodeGUI/blob/main/gui.png" width="410"/><img src="https://github.com/DaGooseYT/EncodeGUI/blob/main/egui_mos.png" width="410"/>
 </p>
@@ -28,11 +28,10 @@ Below is a list of key features in EnocdeGUI **that other competing software lac
 Documentation including the basic usage guide can be found at https://encodegui.com/docs/documentation.
 
 # Support
-Support for issues and directions for how to submit a proper issue/bug report are available on https://encodegui.com/support.
+This is an unoffical fork and is not supported by DaGoose or the Discord server DaFlock. Do NOT request support for this application in DaFlock, please open an issues instead.
 
 # Compilation
-Requires `Qt 6.2.4 SDK` and `MSVC`.
-Install the Qt Visual Studio extension and compile using the built-in Visual Studio tools.
+TBD
 
 # Licensing
 EncodeGUI's source code is released under the AGPL v3.0 license. See `LICENSE` for more details.
