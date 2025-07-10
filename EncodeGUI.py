@@ -14,7 +14,7 @@ class MainWindow(QMainWindow):
         self.setFixedSize(QSize(743, 387))
 
         tabs = QTabWidget()
-        tabs.setTabPosition(QTabWidget.TabPosition.West)
+        tabs.setTabPosition(QTabWidget.TabPosition.North)
         tabs.setMovable(True)
 
         for color in ["red", "green", "blue", "yellow"]:
