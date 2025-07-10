@@ -17,8 +17,8 @@ class MainWindow(QMainWindow):
         tabs.setTabPosition(QTabWidget.TabPosition.North)
         tabs.setMovable(True)
 
-        for color in ["red", "green", "blue", "yellow"]:
-            tabs.addTab(Color(color), color)
+        for color in ["Main", "Video", "Preferences", "Jobs", "Logs", "About / Donate"]:
+            tabs.addTab(color)
 
         self.setCentralWidget(tabs)
 
