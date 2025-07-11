@@ -1,0 +1,1 @@
+pyrcc5 ./EncodeGUI.qrc -o ../../assets.py 

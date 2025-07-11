@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="EncodeGUI">
+    <file>../images/discord_logo.png</file>
+    <file>../images/egui.png</file>
+    <file>../images/EGUI_logo.png</file>
+    <file>../images/egui_mos.png</file>
+    <file>../images/gui.png</file>
+    <file>../images/icon.ico</file>
+    <file>../images/ig_logo.png</file>
+    <file>../images/patreon_logo.png</file>
+    <file>../images/pp_donate.png</file>
+    <file>../images/Preview.png</file>
+    <file>../images/yt_logo.png</file>
+  </qresource>
+</RCC>
